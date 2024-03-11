@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="az" xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title>
+</head>
+<body>
+    <h1>Add Product</h1>
+    <form action="/adminpanel/add-product" method="POST" enctype="multipart/form-data">
+        <label for="categories">Choose Category:</label>
+        <select id="categories" name="categories">
+            <option th:each="category: ${categories}"></option>
+        </select>
+        <br>
+        <label for="product_name">Product name:</label><br>
+        <input type="text" id="product_name" name="product_name"><br>
+        <br>
+        <label for="product_description">Product Description:</label><br>
+        <input type="text" id="product_description" name="product_description"><br>
+        <br>
+        <label for="product_price">Product Price:</label><br>
+        <input type="text" id="product_price" name="product_price"><br>
+        <br>
+        <label for="product_image">Select image:</label><br>
+        <input type="file" id="product_image" name="product_image"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

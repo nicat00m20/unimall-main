@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html lang="az" xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+</head>
+<body>
+    <div th:replace="fragments/header :: header"></div>
+    <h1>Hello, <span th:text="${name}"></span>!</h1>
+    <h1>Categories, <span th:text="${categories}"></span>!</h1>
+    <div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

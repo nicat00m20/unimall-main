@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="az" xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title>
+</head>
+<body>
+    <h1>Add Category</h1>
+    <form action="/adminpanel/add-category" method="POST" enctype="multipart/form-data">
+        <label for="category_name">Category name:</label><br>
+       
+        <input type="text" id="category_name" name="category_name">
+        <br>
+        <label for="category_name">Category Parent ID:</label><br>
+        <input type="text" id="category_parentId" name="category_parentId">
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
